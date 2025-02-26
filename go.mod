@@ -239,14 +239,15 @@ require (
 )
 
 replace (
-	cosmossdk.io/store => github.com/Helios-Chain-Labs/cosmos-sdk/store v0.50.10-helios-45
-	cosmossdk.io/x/evidence => github.com/Helios-Chain-Labs/cosmos-sdk/x/evidence v0.50.10-helios-45
-	cosmossdk.io/x/feegrant => github.com/Helios-Chain-Labs/cosmos-sdk/x/feegrant v0.50.10-helios-45
-	cosmossdk.io/x/upgrade => github.com/Helios-Chain-Labs/cosmos-sdk/x/upgrade v0.50.10-helios-45
+	cosmossdk.io/store => github.com/Helios-Chain-Labs/cosmos-sdk/store v0.50.10-helios-47
+	cosmossdk.io/x/evidence => github.com/Helios-Chain-Labs/cosmos-sdk/x/evidence v0.50.10-helios-47
+	cosmossdk.io/x/feegrant => github.com/Helios-Chain-Labs/cosmos-sdk/x/feegrant v0.50.10-helios-47
+	cosmossdk.io/x/upgrade => github.com/Helios-Chain-Labs/cosmos-sdk/x/upgrade v0.50.10-helios-47
 
 	github.com/cometbft/cometbft => github.com/Helios-Chain-Labs/cometbft v0.50.10-helios-1
 
-	github.com/cosmos/cosmos-sdk => github.com/Helios-Chain-Labs/cosmos-sdk v0.50.10-helios-45
-	github.com/cosmos/cosmos-sdk/x/staking => github.com/Helios-Chain-Labs/cosmos-sdk/x/staking v0.50.10-helios-45
+	github.com/cosmos/cosmos-sdk => github.com/Helios-Chain-Labs/cosmos-sdk v0.50.10-helios-47
+	// github.com/cosmos/cosmos-sdk => ../cosmos-sdk
+	github.com/cosmos/cosmos-sdk/x/staking => github.com/Helios-Chain-Labs/cosmos-sdk/x/staking v0.50.10-helios-47
 	github.com/syndtr/goleveldb => github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7
 )
