@@ -39,11 +39,13 @@ type ChannelKeeper interface {
 	GetChannel(ctx sdk.Context, srcPort, srcChan string) (channel channeltypes.Channel, found bool)
 	GetNextSequenceSend(ctx sdk.Context, portID, channelID string) (uint64, bool)
 	GetAllChannelsWithPortPrefix(ctx sdk.Context, portPrefix string) []channeltypes.IdentifiedChannel
+	GetAllChannels(ctx sdk.Context) []channeltypes.IdentifiedChannel
 }
 
 // ClientKeeper defines the expected IBC client keeper
 type ClientKeeper interface {
 	GetClientConsensusState(ctx sdk.Context, clientID string) (connection ibcexported.ConsensusState, found bool)
+	GetClientState(ctx sdk.Context, clientID string) (client ibcexported.ClientState, found bool)
 }
 
 // ConnectionKeeper defines the expected IBC connection keeper
