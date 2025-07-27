@@ -1,4 +1,4 @@
-VERSION=${VERSION:-"v8.50.10-helios-38"}
+VERSION=${VERSION:-"v8.50.10-helios-39"}
 
 echo "Deploy ibc-go/v8"
 git add .
