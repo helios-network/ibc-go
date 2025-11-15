@@ -323,6 +323,7 @@ func newApp(
 func appExport(
 	logger log.Logger,
 	db dbm.DB,
+	archiveDBs map[string]dbm.DB,
 	traceStore io.Writer,
 	height int64,
 	forZeroHeight bool,
